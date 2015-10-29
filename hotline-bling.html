@@ -1,0 +1,42 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="vendor/color-thief.js" type="text/javascript"></script>
+  <title>hotline bing</title>
+</head>
+
+<body>
+  
+</body>
+
+
+<template name="ApplicationLayout">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">hotline bling</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+    </div>
+  </div>
+  {{> yield}}
+</template>
+
+<template name="home">
+  <canvas id="canvas"></canvas>
+  <video id="vid" controls loop>
+    <source src=video.webm type=video/webm>
+    <source src=video.ogg type=video/ogg>
+    <source src=video.mp4 type=video/mp4>
+  </video>
+  <canvas id="icanvas"></canvas>
+</template>
