@@ -1,1 +1,1 @@
-export MQTTHost='http://127.0.0.1'
+export MQTTHost='http://10.0.1.71'

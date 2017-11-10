@@ -83,7 +83,7 @@ if (Meteor.isClient) {
       setTimeout(draw,20,v,c,w,h);
     }
 
-    setInterval(send,50);
+    setInterval(send,200);
 
     
 
